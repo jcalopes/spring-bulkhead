@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: bulkhead-pattern
+resilience4j.bulkhead:
+  configs:
+    default:
+      maxConcurrentCalls: 2
+  instances:
+    orderService:
+      maxConcurrentCalls: 2
