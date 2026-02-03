@@ -8,3 +8,5 @@ resilience4j.bulkhead:
   instances:
     orderService:
       maxConcurrentCalls: 2
+retries:
+
